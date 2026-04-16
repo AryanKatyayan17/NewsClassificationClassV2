@@ -41,7 +41,8 @@ def background_worker():
         '''
 
 if __name__ == "__main__":
-    run_pipeline()
+    #run_pipeline()
+    print("Running Pipeline in 120 seconds")
 
     scheduler=BackgroundScheduler()
     scheduler.add_job(run_pipeline, 'interval', seconds=120, max_instances=1)
